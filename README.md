@@ -71,3 +71,9 @@ Effects: 'boomEffect'
 // },        // 切换效果
 });
 ````
+
+## 参与贡献
+ 
+如果有 `Bug反馈` 或 `功能建议`，请创建 [Issue](https://github.com/xuanfeng/banner-effect/issues) 或发送 [Pull Request](https://github.com/xuanfeng/banner-effect/pulls)，感谢你的参与和贡献。
+
+[轩枫阁]: http://www.xuanfengge.com/
