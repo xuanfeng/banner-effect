@@ -16,14 +16,17 @@
 
 ##使用
 构建：基于WeFlow https://weflow.io/
+
 查看Demo：http://www.xuanfengge.com/demo/201610/banner-effect/html/index.html
+
 查看Demo代码：dist目录
+
 引入JS文件：dist/banner-effect.js
 
 
 
 ##配置
-`
+
 banner: '#banner_img',       // banner dom（不包含子元素）
 index: 0,           // 设定初始化时banner的索引
 autoplay: 3000,     // 自动切换的时间间隔（单位ms），不设定该参数banner不会自动切换
@@ -67,4 +70,3 @@ Effects: 'boomEffect'
 // 	'navi': 'pageEffect'
 // },        // 切换效果
 });
-`
