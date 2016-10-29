@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Banner Effect Demo - 轩枫阁</title>
+	<link rel="stylesheet" href="../css/style-banner.css">
+</head>
+<body>
+
+	<section class="mod-banner" id="js_banner">
+        <a href="javascript:;" target="_blank" class="mod-banner__img" id="banner_img" style="background-image: url(../img/banner/1.jpg)"></a>
+        <div class="mod-banner__navi">
+            <div class="js_banner_nav mod-banner_nav"></div>
+        </div>
+
+        <div class="mod-banner__tool">
+            <span class="js_banner_prev mod-banner__tool-prev"></span>
+            <span class="js_banner_next mod-banner__tool-next"></span>
+        </div>
+
+    </section>
+
+    <footer id="footer">本效果仅支持高级浏览器，源代码：<a href="https://github.com/xuanfeng/banner-effect" target="_blank">Github</a>  | 开发者：<a href="http://www.xuanfengge.com" target="_blank">轩枫阁</a></footer>
+
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/banner-effect.js"></script>
+	<script>
+	var banner = new Banner({
+		banner: '#banner_img',       // banner dom（不包含子元素）
+        index: 0,           // 设定初始化时banner的索引
+        // speed: 2000,        // 滑动速度
+        autoplay: 3000,     // 自动切换的时间间隔（单位ms），不设定该参数banner不会自动切换
+        width: 1200,        // banner宽度
+        height: 300,        // banner高度
+
+        // 图片相关
+        images: [{
+        	url: '../img/banner/1.jpg',
+        	link: 'http://www.xuanfengge.com'
+        }, {
+        	url: '../img/banner/2.jpg',
+        	link: 'javascript:;'
+        }, {
+        	url: '../img/banner/3.jpg',
+        	link: 'javascript:;'
+        }, {
+        	url: '../img/banner/4.jpg',
+        	link: 'javascript:;'
+        }],         // 图片url列表
+        preloadImages: true,// 预加载所有图片
+
+        // 分页及控制
+        pagination: '.js_banner_nav',     // 分页dom
+        paginationClick: true,  // 分页是否可点击
+        prevButton: '.js_banner_prev',     // 下一张dom
+        nextButton: '.js_banner_next',     // 上一张dom
+
+        // 回调函数
+        onInit: function(){
+        	console.log('init');
+        },     // 初始化后执行
+        onClick: function(event, index){
+        	console.log('onClick: ' + index);
+        },    // 点击banner后执行
+        onBannerChange: function(){
+        	console.log('onBannerChange');
+        },  // banner切换后执行
+
+        Effects: 'boomEffect'
+        // Effects: {
+        // 	'prev': 'turnEffect',
+        // 	'next': 'boomEffect',
+        // 	'navi': 'pageEffect'
+        // },        // 切换效果
+	});
+	</script>
+</body>
+</html>

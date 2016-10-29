@@ -1,0 +1,139 @@
+*{margin: 0;padding: 0;}
+body{
+    overflow: hidden;
+}
+#footer{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    color: #333;
+    font-family: "Microsoft Yahei";
+    font-size: 14px;
+}
+.transition(@transition) {
+  -webkit-transition:@transition;
+  -moz-transition:@transition;
+  -o-transition:@transition;
+  transition:@transition;
+}
+
+.mod-banner{
+    position: relative;
+	width: 100%;
+    max-height: 300px;
+    margin-top: 10px;
+    background: #F5F5F5;
+    border-bottom: solid 1px #FFF;
+}
+
+.mod-banner__img{
+    display: block;
+    position: relative;
+	width: 100%;
+    max-width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+    z-index: 2;
+    // background-image: url(../img/banner/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    li{
+        display: none;
+        margin: 0 auto;
+        text-align: center;
+        img{
+            width: 100%;
+        }
+    }
+    li.current{
+        display: block;
+    }
+}
+
+.mod-banner__navi{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 8888;
+
+	.mod-banner_nav{
+		max-width: 180px;
+        height: 20px;
+        text-align: center;
+        margin: 5px auto 0;
+        a{
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin: 0 5px;
+            border-radius: 12px;
+            border: solid 2px #FFF;
+            background: #FFF;
+            background: transparent;
+            .transition(all 0.5s ease);
+            &:hover{
+                border: solid 2px #39c;
+                background: #39c;
+            }
+        }
+        .current{
+            width: 24px;
+            background: #39c;
+            border: solid 2px #39c;
+        }
+	}
+	.mod-banner__nav-dot{
+		position: absolute;
+	    top:10px;
+	    right: 10%;
+	    width: 12px;
+	    height: 12px;
+	    overflow: hidden;
+	}
+}
+
+.mod-banner__tool{
+    span{
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin-top: -35px;
+        text-indent: -9999px!important;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        .transition(all 0.2s linear);
+        border-radius: 1px;
+    }
+
+    .mod-banner__tool-prev{
+        left: 0px;
+        top:50%;
+        margin-top: -25px;
+        background-color: #27CFC3;
+        background-image: url(../slice/arrow-prev_white.png);
+        z-index: 2;
+        &:hover{
+            background-color: #FFF;
+            background-image: url(../slice/arrow-prev.png);
+        }
+    }
+    .mod-banner__tool-next{
+        right: 0px;
+        top:50%;
+        margin-top: -25px;
+        background-color: #27CFC3;
+        background-image: url(../slice/arrow-next_white.png);
+        z-index: 2;
+
+        &:hover{
+            background-color: #FFF;
+            background-image: url(../slice/arrow-next.png);
+    	}
+
+	}
+}
