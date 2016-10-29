@@ -15,7 +15,7 @@
 
 
 ##使用
-构建：基于WeFlow https://weflow.io/
+构建：基于[WeFlow](https://weflow.io/)
 
 查看Demo：http://www.xuanfengge.com/demo/201610/banner-effect/html/index.html
 
@@ -76,4 +76,4 @@ Effects: 'boomEffect'
  
 如果有 `Bug反馈` 或 `功能建议`，请创建 [Issue](https://github.com/xuanfeng/banner-effect/issues) 或发送 [Pull Request](https://github.com/xuanfeng/banner-effect/pulls)，感谢你的参与和贡献。
 
-轩枫阁: http://www.xuanfengge.com/
+[轩枫阁](http://www.xuanfengge.com/)
