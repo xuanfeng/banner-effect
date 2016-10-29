@@ -26,7 +26,7 @@
 
 
 ##配置
-
+````
 banner: '#banner_img',       // banner dom（不包含子元素）
 index: 0,           // 设定初始化时banner的索引
 autoplay: 3000,     // 自动切换的时间间隔（单位ms），不设定该参数banner不会自动切换
@@ -70,3 +70,4 @@ Effects: 'boomEffect'
 // 	'navi': 'pageEffect'
 // },        // 切换效果
 });
+````
