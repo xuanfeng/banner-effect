@@ -89,7 +89,7 @@
                 var $pagination = $(this.options.pagination);
                 var pagi = '';
                 for(var i=0; i<this.total; i++){
-                    i!=0 ? pagi += '<a class="js_nav" href="javascript:;"></a>' : pagi = '<a class="js_nav current" href="javascript:;"></a>';
+                    i!=0 ? pagi += '<a class="js_nav" href="javascript:;"></a>' : pagi = '<a class="js_nav mod-banner__current" href="javascript:;"></a>';
                 }
                 $pagination.html(pagi);
 
@@ -121,7 +121,7 @@
                 $pagination.on('click', function(event){
                     var index = $(event.target).index();
                     self.bannerChange(index, 'navi');
-                    $(this).addClass("current").siblings("a").removeClass("current");
+                    $(this).addClass("mod-banner__current").siblings("a").removeClass("mod-banner__current");
                 });
             }
 
@@ -136,7 +136,7 @@
             if(!this.ready) return;
             clearInterval(this.autoplayTimer);
 
-            $(this.options.pagination).find('a').removeClass('current').eq(index).addClass('current');
+            $(this.options.pagination).find('a').removeClass('mod-banner__current').eq(index).addClass('mod-banner__current');
 
             eval('this.' + this.getBannerEffect(type) + '( ' + index + ')');
             this.banner.attr('href', this.options.images[index].link);
