@@ -3,6 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Banner Effect Demo - 轩枫阁</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        body{
+            overflow: hidden;
+        }
+        #footer{
+            width: 100%;
+            margin-top: 50px;
+            text-align: center;
+            color: #333;
+            font-family: "Microsoft Yahei";
+            font-size: 14px;
+        }
+    </style>
 	<link rel="stylesheet" href="../css/style-banner.css">
 </head>
 <body>
@@ -28,7 +42,6 @@
 	var banner = new Banner({
 		banner: '#banner_img',       // banner dom（不包含子元素）
         index: 0,           // 设定初始化时banner的索引
-        // speed: 2000,        // 滑动速度
         autoplay: 3000,     // 自动切换的时间间隔（单位ms），不设定该参数banner不会自动切换
         width: 1200,        // banner宽度
         height: 300,        // banner高度

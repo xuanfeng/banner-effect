@@ -1,21 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  overflow: hidden;
-}
-
-#footer {
-  width: 100%;
-  margin-top: 50px;
-  text-align: center;
-  color: #333;
-  font-family: "Microsoft Yahei";
-  font-size: 14px;
-}
-
 .mod-banner {
   position: relative;
   width: 100%;
@@ -48,7 +30,7 @@ body {
   width: 100%;
 }
 
-.mod-banner__img li.current {
+.mod-banner__img .mod-banner__current {
   display: block;
 }
 
@@ -88,7 +70,7 @@ body {
   background: #39c;
 }
 
-.mod-banner__navi .mod-banner_nav .current {
+.mod-banner__navi .mod-banner_nav .mod-banner__current {
   width: 24px;
   background: #39c;
   border: solid 2px #39c;
